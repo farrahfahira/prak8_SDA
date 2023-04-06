@@ -4,9 +4,9 @@ public class MergeApp {
     int[] arrayB = { 7, 14, 39, 55, 62, 74 };
     int[] arrayC = new int[2];
 
-    merge(arrayA, 1, arrayB, 1, arrayC);
+    merge(arrayA, 4, arrayB, 6, arrayC);
 
-    display(arrayC, 2);
+    display(arrayC, 10);
   }
 
   // merge A and B into C
