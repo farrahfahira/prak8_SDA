@@ -88,17 +88,18 @@ public class Darray extends Arrays {
     int lowerBound = lowPtr;
     int mid = highPtr - 1;
     int n = upperBound - lowerBound + 1; // # of items
-    
+
     while (lowPtr <= mid && highPtr <= upperBound)
       if (a[lowPtr] < a[highPtr])
         workSpace[j++] = a[lowPtr++];
       else
+        workSpace[j++] = a[highPtr++];
 
-        
     while (lowPtr <= mid)
       workSpace[j++] = a[lowPtr++];
-    while (highPtr <= upperBound)
+
       workSpace[j++] = a[highPtr++];
+      
     for (j = 0; j < n; j++)
       a[lowerBound + j] = workSpace[j];
   }

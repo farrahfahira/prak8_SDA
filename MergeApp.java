@@ -2,7 +2,7 @@ public class MergeApp {
   public static void main(String[] args) {
     int[] arrayA = { 23, 47, 81, 95 };
     int[] arrayB = { 7, 14, 39, 55, 62, 74 };
-    int[] arrayC = new int[2];
+    int[] arrayC = new int[10];
 
     merge(arrayA, 4, arrayB, 6, arrayC);
 
